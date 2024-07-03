@@ -5,27 +5,54 @@ This project is a sophisticated file management system designed to ensure robust
 
 ## Implemented Features
 
-- 2-factor-authentication using spring security
-- JWT for authorization for different users
-- Set time until JWT token expires and user has to login again
-- File upload for file that ends with "png", "jpeg", "jpg", "docx", "pdf", "xlsx", "csv", "pptx", "txt"
-- File Download and Updation
-- File Deletion for specific user having roles: CEO or ADMIN
-- User can Upload his/her profile picture and update his/her details
-
+- Enhanced Security:
+    * 2-factor authentication using Spring Security
+    * JWT for user authorization
+    * Configurable JWT expiration time, requiring periodic re-login
+- File Management:
+    * File upload for extensions: png, jpeg, jpg, docx, pdf, xlsx, csv, pptx, txt
+    * File download and update capabilities
+    * File deletion restricted to users with CEO or ADMIN roles
+- User Profile Management:
+    * Upload and update profile pictures
+    * Edit user details
+    * Promote/demote users to different roles (restricted to CEO or ADMIN roles))
 
 
 ## Demo Video Of The Project
 
-link
+[link](https://youtube.com)
 
 
-## Installation/Running Project Locally
+## Run the Project Locally
 
-- open backend code using any IDE (preferrably Intellij IDEA)
-- navigate to application.yml, and update the line that have "#    need to be updated according to machine " on them
-- Run the Backend code
-- open frontend code using an IDE (preferrably VS Code)
-- run command-> npm install
-- run application-> npm run dev
+Clone the project
 
+```bash
+  git clone https://github.com/Broilzzz/File-Management-System.git
+```
+
+Go to the project directory
+
+```bash
+  cd File-Management-System
+```
+Backend:
+
+- Open the backend code using an IDE (preferably IntelliJ IDEA).
+- Navigate to application.yml and update the lines marked with `# need to be updated according to machine`.
+- Run the backend code.
+
+Frontend:
+
+ - Open the frontend code using an IDE (preferably VS Code).
+ - Install dependencies
+
+```bash
+  npm install
+```
+- Start the application:
+
+```bash
+  npm run dev
+```
