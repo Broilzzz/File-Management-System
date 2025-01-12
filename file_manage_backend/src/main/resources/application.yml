@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/fileManagement?createDatabaseIfNotExist=true
-    username: root
-    password: A10102004a!
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 
@@ -18,8 +18,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: broilzzz09@gmail.com
-    password: wufl bwlu cbst anld
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -30,8 +30,8 @@ spring:
             trust: smtp.gmail.com
 token:
   signing:
-    key: 11a9b93104dec1d3e36a26bf6284501dd9c19677fb83d4940b03984818d1cca2
+    key: ${SIGNING_KEY}
 
 file:
   storage:
-    location: C:/Users/ahila/Desktop/html-css-youtube/FileStorageDatabase
+    location: ${FILE_STORAGE_LOCATION}
